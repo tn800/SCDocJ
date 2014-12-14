@@ -1,0 +1,16 @@
+数式処理関連	BasicOpUGen		UGensを用いた演算を行うUGenの共通スーパー・クラス	
+				
+	クラス名		邦訳	私の注釈
+				
+数式処理関連	BinaryOpUGen		UGensを用いた二項演算を行う	例えば、SinOsc.ar + Saw.arの足し算を行う時に内部的に使われる。＋が2項演算子
+数式処理関連	UnaryOpUGen		UGensを用いた単項演算を行う	例えば、SinOsc.ar(1).round(0.1); などの時に内部的に使われる。.roundが単項演算子。
+数式処理関連	Sum3		3つのシグナルを加算する	{Sum3(SinOsc.ar(800), Saw.ar(100),Pulse.ar(2000,0.5,0.2))}.play;
+数式処理関連	Sum4		4つのシグナルを加算する	
+				
+振幅の解析	AmpComp	 ... 	心理的音響に基づいて振幅を補正する	
+振幅の解析	AmpCompA	 ... 	心理的音響に基づいて振幅を補正する（ANSI規格のA特性曲線）
+振幅の解析	Amplitude	 ... 	アンプリチュード・フォロワー	振幅の値を解析。
+振幅の解析	DetectSilence	 ... 	シグナルの値が指定したスレッショルドを下回ると、doneActionを評価する
+振幅の解析	Loudness	 ... 	瞬間的ラウドネスを検出する。単位はソーン（sone？）	
+振幅の解析	Peak	 ... 	入力されたシグナルのピークの振幅を出力する	
+振幅の解析	PeakFollower	 ... 	入力されたシグナルのピークの振幅を出力する	
