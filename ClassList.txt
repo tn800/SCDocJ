@@ -1,4 +1,4 @@
-数式処理関連	BasicOpUGen		UGensを用いた演算を行うUGenの共通スーパー・クラス	
+aaa数式処理関連	BasicOpUGen		UGensを用いた演算を行うUGenの共通スーパー・クラス	
 				
 	クラス名		邦訳	私の注釈
 				
